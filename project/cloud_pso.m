@@ -219,7 +219,7 @@ certainflag=zeros(tau_num,1);
             g=g+1;
         end
         
-        if g_obj_cloud-g_obj>0.05
+        if g_obj_cloud-g_obj>0.01
             %disp(['本次决策中，移动端设备',num2str(mdnum),'的任务',num2str(dealnum(mdnum)),'选择卸载到云上。下一个任务产生的等待时间为',num2str(gest_cloud),'s']);
             t_last_task(mdnum)=cloud_t;
             g_obj_aoi(mdnum)=cloud_gbest_aoi(mdnum);
