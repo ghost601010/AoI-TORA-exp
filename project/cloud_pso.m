@@ -127,7 +127,7 @@ certainflag=zeros(tau_num,1);
         g=1;
         while g<=MG
             for t =1:particlesize
-                v(1,t)=0.729*(v(1,t)+c1*rand*sign(pest_cloud(1,t)-p(1,t))*0.2+c2*rand*sign(gest_cloud-p(1,t)))*0.2;
+                v(1,t)=0.729*v(1,t)+c1*rand*sign(pest_cloud(1,t)-p(1,t))*0.2+c2*rand*sign(gest_cloud-p(1,t))*0.2;
                 for j = 1:1
                     if v(j,t)>vwtmax
                         v(j,t)=vwtmax;
